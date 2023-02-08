@@ -1,0 +1,233 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+
+body{
+    overflow: hidden;
+}
+ .container{
+
+    width: 100%;
+    min-height: 100vh;
+    background-color: beige;
+
+ }
+nav{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height:80px ;
+    line-height: 80px;
+}
+
+.logo{
+    display: flex;
+    font-size: 25px;
+    font-weight: 800px;
+    letter-spacing: 3px;
+    cursor: pointer;
+    color: rgb(78, 78, 76);
+    text-transform: uppercase;
+}
+.container nav .logo h3 span{
+    color: purple;
+}
+b{
+    font-size: 70px;
+    color: purple;
+}
+.navitems{
+    display: flex;
+}
+
+.navitems li {
+    list-style: none;
+    margin: 0 15px;
+  
+}
+
+.navitems li a {
+letter-spacing: 3px;
+font-size:  15px;
+text-decoration: none;
+font-weight: bold;
+text-transform: uppercase;
+color: rgb(78, 78, 76);
+}
+
+.navitems li a:hover{
+
+    color: purple;
+}
+
+.link{
+   
+     font-size: 20px;
+    margin: 5px 10px;
+    color: rgb(78, 78, 76);
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.link a:hover{
+    color: purple;
+}
+.wrapper{
+    display: flex;
+    width: 100%;
+    height: calc(100vh-80px); 
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding: 0 10px;
+}
+.wrapper::before{
+
+    position: absolute;
+    content: '';
+    background:linear-gradient(45deg,purple,pink) ;
+    height: 600px;
+    width: 600px;
+    border-radius: 50%;
+    left: -12%;
+    top: 40%;
+    animation: ball1 6s linear infinite;
+
+}
+.wrapper::after{
+
+    position: absolute;
+    content: '';
+    background:linear-gradient(45deg,purple,pink) ;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    left: 35%;
+    top: 12%;
+    animation: ball2 6s linear infinite;
+
+}
+@keyframes ball1 {
+    50%{
+        left: -13%;
+        top: 41%;
+    }
+}
+@keyframes ball2 {
+    50%{
+        left: 35%;
+        top: 10%;
+    }
+}
+
+
+.cols{
+    width: 50%;
+}
+.cols0{
+    width: 60%;
+    z-index: 5;
+}
+.topline{
+    display: block;
+    position: relative;
+    font-size: 35px;
+    letter-spacing: 5px;
+    color:  rgb(78, 78, 76);
+}
+.topline::after{
+    position: absolute;
+    content: '';
+    background-color: purple;
+    height: 4px;
+    width: 45px;
+    bottom: 10px;
+}
+.wrapper h1{
+    display: block;
+    font-size: 4em;
+    font-weight: 900;
+    color: rgb(78, 78, 76);
+}
+.multitext{
+    color: purple;
+    text-transform: capitalize;
+}
+p{
+    display: block;
+    font-size: 1.2em;
+    color: rgb(78, 78, 76);
+    width: 90%;
+}
+.btns{
+     width: 100%;
+     position: relative;
+     left:150px;
+}
+button{
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+    background-color: rgb(78, 78, 76);
+    padding: 8px 14px;
+    margin: 40px 5px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    box-shadow:0px 15px 10px rgb(0, 0, 0,0.4) ;
+    border-radius: 15px 15px;
+
+}
+button:hover{
+    background-color: purple;
+}
+.imgbox{
+
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.imgbox img{
+
+    position: relative;
+    height: 100%;
+    width: calc(130% - 80px);
+    right: 50px;
+    top: -100px;
+    transform: rotateY(180deg);
+    animation: user 4s linear infinite;
+}
+@keyframes user {
+    50%{
+        right: 30px;
+        top: -90px;
+    }
+    
+}
+
+.imgbox #splash{
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) rotate(-35deg);
+    width: 160%;
+    filter: saturate(200%);
+    animation: paint 4s linear infinite;
+
+}
+@keyframes paint
+ {
+    50%{
+        top: 49%;
+        left: 51%;
+        width: 155%;
+    }
+    
+}

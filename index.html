@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyPortfolio</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="logo"><h3>My<span>Portfolio</span><b>,</b></h3></div>
+
+            <ul class="navitems">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Skills</a></li>
+                <li><a href="#">Projects</a></li>
+            </ul>
+            <div class="link">
+                <a><i class=" fab fa-linkedin"></i></a>
+                <a><i class=" fab fa-instagram"></i></a>
+                <a><i class=" fab fa-twitter"></i></a>
+            </div>
+        </nav>
+        <div class="wrapper">
+        <div class="cols cols0">
+            <span class="topline">Hello</span>
+            <h1>I'm <span class="multitext"></span></h1>
+            <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam vitae minus delectus voluptates beatae delectus voluptates beata</p>
+            <div class="btns">
+                <button>Download CV</button>
+                <button>Hire me</button>
+            </div>
+        </div>
+        <div class="cols cols1">
+            <div class="imgbox">
+                <img src="./images/paint.png" id ="splash">
+                <img src="./images/person.png" >
+            </div>
+        </div>
+        </div>
+        </div>
+    <script src="https://kit.fontawesome.com/6ceba0d9d3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./index.css">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typingEffect = new Typed(".multitext",{
+            strings : ["Troy","a developer","a designer",],
+            loop:true,
+            typeSpeed :100,
+            backSpeed : 80,
+            backDelay :  1500
+        })
+    </script>
+</body>
+</html>
